@@ -15,11 +15,19 @@
             line-height: 1.6;
         }
 
+        /* HEADER WITH PHOTO */
         header {
             background: linear-gradient(135deg, #1f3c88, #162447);
             color: white;
-            text-align: center;
-            padding: 2.5rem 1rem;
+            padding: 2.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-text {
+            max-width: 70%;
         }
 
         header h1 {
@@ -32,6 +40,20 @@
             font-size: 1.1rem;
         }
 
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffd166;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        /* NAVIGATION */
         nav {
             background: #0f3057;
             padding: 0.8rem;
@@ -49,6 +71,7 @@
             color: #ffd166;
         }
 
+        /* SECTIONS */
         section {
             max-width: 1100px;
             margin: 20px auto;
@@ -73,6 +96,11 @@
             padding-left: 20px;
         }
 
+        .highlight {
+            font-weight: bold;
+            color: #1f3c88;
+        }
+
         footer {
             background: #1f3c88;
             color: white;
@@ -81,16 +109,21 @@
             margin-top: 30px;
         }
 
-        .contact-info {
-            margin-top: 10px;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #1f3c88;
-        }
-
+        /* MOBILE RESPONSIVE */
         @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-text {
+                max-width: 100%;
+            }
+
+            .profile-photo {
+                margin-top: 20px;
+            }
+
             section {
                 margin: 10px;
                 padding: 1.5rem;
@@ -98,13 +131,20 @@
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Ogutu Dolfin</h1>
-    <p>English Literature Teacher | Education Leader | Literacy & Girls Empowerment Advocate</p>
-    <div class="contact-info">
-        <p>📞 +254705214064 | 📧 dolfinogutu@gmail.com</p>
+    <div class="header-text">
+        <h1>Ogutu Dolfin</h1>
+        <p>English Literature Teacher | Education Leader | Literacy & Girls Empowerment Advocate</p>
+        <div class="contact-info">
+            <p>📞 +254705214064 | 📧 dolfinogutu@gmail.com</p>
+        </div>
+    </div>
+
+    <div>
+        <img src="yourphoto.jpg" alt="Ogutu Dolfin" class="profile-photo">
     </div>
 </header>
 
@@ -178,10 +218,9 @@
     <h3>Ramah Homeschool (February – December 2022)</h3>
     <p><strong>Supervisor – ACE Curriculum</strong></p>
     <ul>
-        <li>Supervised learner goal-setting and pacework completion.</li>
         <li>Implemented classroom management system improving task completion by 15%.</li>
+        <li>Supervised learner goal-setting and performance tracking.</li>
         <li>Coordinated extracurricular programs and life skills training.</li>
-        <li>Managed record keeping, logistics, and procurement.</li>
     </ul>
 </section>
 
